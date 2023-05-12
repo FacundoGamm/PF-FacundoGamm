@@ -1,0 +1,108 @@
+.contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .textoContacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 30vh;
+        background-image: url(https://images.unsplash.com/photo-1480944657103-7fed22359e1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        border-top: #1f3443;
+        border-bottom: #1f3443;
+        border-style:solid;
+        border-width: 4px 0px 4px 0px;
+        margin: 60px 0px 20px 0px;
+    }
+    p{
+        font-family: Botones;
+        color: #FFDAC6;
+        background-color: #1f34439f;
+        max-width: 700px;
+        font-size: larger;
+        border-radius: 15px;
+        transition: .3s;
+    }
+    p:hover{
+        transform: scale(1.02);
+        color: azure;
+        transition: .3s;
+    }
+    .mapaContacto{
+        margin: 20px 0px 40px 0px;
+        border-style: solid;
+        border-color: #1f3443;
+        border-width: 4px;
+        border-radius: 23px;
+        .mapaIframe{
+            width: 600px;
+            height: 500px;
+            border-radius: 18px;
+        }
+    }
+}
+
+.alertaContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+    width: 250px;
+    border-radius: 20px;
+    position: absolute;
+    right: 2%;
+    top: 80%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    background-image: radial-gradient(#450b0b, #00111d);
+    box-shadow: -10px 0px 50px 25px rgba(0,0,0,0.90);
+    p{
+        font-family: Textos;
+        font-size: larger;
+        color: #FFDAC6;
+        text-align: center;
+        max-width: 170px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1160px){
+    .alertaContacto{
+        height: 390px;
+        width: 130px;
+        top: 67%;
+    }
+}
+
+@media (max-width: 900px){
+    .mapaIframe{
+        max-width:400px;
+    }
+}
+
+@media (max-width: 700px){
+    .mapaIframe{
+        max-height: 300px;
+        max-width: 300px;
+    }
+    .alertaContacto{
+        height: 260px;
+        font-size: small;
+    }
+}
+
+@media (max-width: 600px){
+     .alertaContacto{
+        display: none;
+     }
+     .contacto P{
+        font-size: 13px;
+     }
+}

@@ -1,0 +1,67 @@
+//MQ INDEX//
+
+@media (max-width:990px){
+    .sectionIndex .container{
+        width: 600px;
+    }
+}
+@media (max-width:650px){
+    .sectionIndex .container{
+        width: 440px;
+    }
+    .form-control{
+        max-width: 300px;
+    }
+}
+@media (max-width:480px){
+    .sectionIndex .container{
+        width: 300px;}
+    .form-control{
+        max-width: 200px;
+    }
+    .realStateFooter{
+        background-color: rgba(255, 255, 255, 0);
+        color: #ffffff00;
+        height: 0px;
+        width: 0px;
+    }
+}
+
+
+//MQ ALQUILERES//
+@media (max-width:1400px){
+    .grillaAlq{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width:440px){
+    .grillaAlq img{
+        width: 250px;
+        height: 300px;
+    }
+    .imgsAlq{
+        height: 400px;
+        margin: 20px 1px;
+    }
+}
+
+//MQ VENTAS//
+@media (max-width:1020px){
+    .grillaVentas .imgVentas .textoVentas{
+        font-size: medium;
+    }
+}
+@media (max-width:768px){
+    .grillaVentas .imgVentas .textoVentas{
+        font-size:small;
+    }
+}
+@media (max-width:450px){
+    .grillaVentas .imgVentas .textoVentas{
+        font-size:10px;
+    }
+}

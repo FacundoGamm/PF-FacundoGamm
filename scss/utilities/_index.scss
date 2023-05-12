@@ -1,0 +1,328 @@
+/*RESETEO MARGIN/PADDING*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+//---------------MAIN INDEX------------//
+
+.mainIndex {
+    background-image: url(https://images.unsplash.com/photo-1495317823589-e67efe1524b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190vh;
+    display: flex;
+    flex-direction: column;
+
+    .navbar .container {
+        justify-content: center;
+    }
+
+    .busquedaIndex {
+        height: 40vh;
+
+        .d-flex {
+            border-radius: 22px;
+            background-color: #1f3443;
+            padding: 8px;
+        }
+
+        .d-flex:hover {
+            transform: scale(1.01);
+        }
+
+        .form-control {
+            width: 550px;
+            padding: 8px 8px 8px 8px;
+            background-color: #D9D9D9;
+            border-radius: 19px;
+            border-style: solid;
+            border-color: #1f3443;
+            border-width: 3px;
+        }
+
+        .form-control:focus {
+            border-color: #b33838;
+        }
+
+        .btn-outline-success {
+            width: 66px;
+            padding: 8px;
+            background-color: #D9D9D9;
+            border-radius: 17px;
+            border-style: solid;
+            border-color: #1f3443;
+            border-width: 3px;
+            color: #1f3443;
+        }
+
+        .btn-outline-success:hover {
+            background-color: #FFDAC6;
+            color: #1f3443;
+            transform: scale(1.02);
+            border-color: #b33838;
+        }
+    }
+
+    .textoConFondo {
+        height: 280px;
+        background-image: url(https://thumbs.dreamstime.com/b/mapa-de-la-ciudad-buenos-aires-argentina-del-vector-aut%C3%B3noma-suram%C3%A9rica-150987359.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        border-top: #1f3443;
+        border-bottom: #1f3443;
+        border-style: solid;
+        border-width: 4px 0px 4px 0px;
+
+        .gradientIndex {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.225), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.223));
+            height: 280px;
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-family: Textos;
+            background-color: #1f34439e;
+            box-shadow: 2px 6px 60px 31px rgba(31, 52, 67, 0.759);
+            border-radius: 15px;
+            height: 80px;
+            max-width: 547px;
+            text-align: center;
+            justify-content: center;
+            font-size: x-large;
+            color: #efeded;
+            font-style: oblique;
+            text-decoration: dotted;
+        }
+
+        p:hover {
+            color: #D9D9D9;
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
+    }
+}
+
+//----------CAROUSEL DE FOTOS MAIN INDEX---------//
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+
+    >img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+}
+
+// Styling Carousel//
+.sectionIndex {
+    background-image: linear-gradient(#b33838, #1f3443);
+    padding: 50px 0;
+    max-width: 950px;
+    margin: auto;
+    border-radius: 45px;
+    margin-top: 20px;
+
+    .container {
+        max-width: 1044px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .carousel {
+        display: block;
+        text-align: left;
+        position: relative;
+        margin-bottom: 22px;
+
+        >input {
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            height: 1px;
+            width: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+
+            &:nth-of-type(6):checked~.carousel__slides .carousel__slide:first-of-type {
+                margin-left: -500%;
+            }
+
+            &:nth-of-type(5):checked~.carousel__slides .carousel__slide:first-of-type {
+                margin-left: -400%;
+            }
+
+            &:nth-of-type(4):checked~.carousel__slides .carousel__slide:first-of-type {
+                margin-left: -300%;
+            }
+
+            &:nth-of-type(3):checked~.carousel__slides .carousel__slide:first-of-type {
+                margin-left: -200%;
+            }
+
+            &:nth-of-type(2):checked~.carousel__slides .carousel__slide:first-of-type {
+                margin-left: -100%;
+            }
+
+            &:nth-of-type(1):checked~.carousel__slides .carousel__slide:first-of-type {
+                margin-left: 0%;
+            }
+
+            &:nth-of-type(1):checked~.carousel__thumbnails li:nth-of-type(1) {
+                box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+            }
+
+            &:nth-of-type(2):checked~.carousel__thumbnails li:nth-of-type(2) {
+                box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+            }
+
+            &:nth-of-type(3):checked~.carousel__thumbnails li:nth-of-type(3) {
+                box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+            }
+
+            &:nth-of-type(4):checked~.carousel__thumbnails li:nth-of-type(4) {
+                box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+            }
+
+            &:nth-of-type(5):checked~.carousel__thumbnails li:nth-of-type(5) {
+                box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+            }
+
+            &:nth-of-type(6):checked~.carousel__thumbnails li:nth-of-type(6) {
+                box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+            }
+        }
+    }
+
+    .carousel__slides {
+        position: relative;
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .carousel__slide {
+        position: relative;
+        display: block;
+        flex: 1 0 100%;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: all 300ms ease-out;
+        box-sizing: border-box;
+        white-space: normal;
+
+        figure {
+            display: flex;
+            margin: 0;
+        }
+
+        div {
+            @include aspect-ratio(3, 2);
+            width: 100%;
+        }
+
+        img {
+            display: block;
+            flex: 1 1 auto;
+            object-fit: cover;
+        }
+
+        figcaption {
+            align-self: flex-end;
+            padding: 20px 20px 0 20px;
+            flex: 0 0 auto;
+            width: 25%;
+            min-width: 150px;
+            font-family: Botones;
+            font-size: large;
+            color: #D9D9D9;
+            filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.758));
+        }
+
+        figcaption:hover {
+            transform: scale(1.1);
+            color: #f4f4f4;
+            transition: .2s;
+        }
+
+        .credit {
+            margin-top: 1rem;
+            color: rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+
+        &.scrollable {
+            overflow-y: scroll;
+        }
+    }
+
+    .carousel__thumbnails {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        margin: 10px;
+
+        .carousel__slides+& {
+            margin-top: 20px;
+        }
+
+        li {
+            flex: 1 1 auto;
+            max-width: calc((100% / 6) - 20px);
+            margin: 0 10px;
+            transition: all 300ms ease-in-out;
+        }
+
+        label {
+            display: block;
+            @include aspect-ratio(1, 1);
+
+            &:hover,
+            &:focus {
+                cursor: pointer;
+
+                img {
+                    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+                    transition: all 300ms ease-in-out;
+                }
+            }
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.carousel__thumbnails img:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}

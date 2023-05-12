@@ -1,0 +1,53 @@
+//-------------------------------FOOTER----------------------------------------//
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f3443;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: #b33838;
+    .contactoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFDAC6;
+    margin: 10px;
+    width: 180px;
+    height: 30px;
+    border-radius: 8px;}
+    .redesFooter {
+    display: flex;}
+    .logos {
+    display: flex;
+    width: 62px;
+    height: 60px;
+    flex-wrap: wrap;}
+    .redesFooter a img {
+    width: 25px;
+    height: 25px;
+    margin: 2px;}
+    .realStateFooter {
+    position: absolute;
+    left: 47%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    font-family: Título;
+    font-size: 30px;
+    background-color: #5F5F5F;
+    height: 35px;
+    max-width: 400px;
+    border-top-right-radius: 11px;
+    border-top-left-radius: 11px;
+    margin: 15px 5px 0px 5px;}
+    .númerosFooter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    margin-top: 5px
+}
+}
