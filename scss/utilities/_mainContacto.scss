@@ -73,36 +73,4 @@
     }
 }
 
-@media (max-width: 1160px){
-    .alertaContacto{
-        height: 390px;
-        width: 130px;
-        top: 67%;
-    }
-}
 
-@media (max-width: 900px){
-    .mapaIframe{
-        max-width:400px;
-    }
-}
-
-@media (max-width: 700px){
-    .mapaIframe{
-        max-height: 300px;
-        max-width: 300px;
-    }
-    .alertaContacto{
-        height: 260px;
-        font-size: small;
-    }
-}
-
-@media (max-width: 600px){
-     .alertaContacto{
-        display: none;
-     }
-     .contacto P{
-        font-size: 13px;
-     }
-}

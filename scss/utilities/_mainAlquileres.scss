@@ -31,11 +31,13 @@
     .pAlq{
         text-align: center;
         font-family: Textos;
-        margin-top: 10px;
+        margin: 10px 60px;
         padding-top: 20px;
+        padding-bottom: 10px;
         min-height: 13vh;
         background-color: #1f34435e;
         font-size: larger;
+        border-radius: 15px;
     }
 }
 
@@ -54,7 +56,8 @@
     align-items: center;
     img{
         height: 350px;
-        max-width: 350px;
+        width: 100%;
+        object-fit: cover;
         border-radius: 25px;
         border-style: solid;
         border-width: 2px;
@@ -104,6 +107,8 @@
         padding: 25px;
         border-radius: 45px;
         height: 469px;
+        width: 400px;
+        overflow: hidden;
         box-shadow: 0px 5px 5px;
     }
     p{

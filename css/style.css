@@ -323,25 +323,6 @@ header img:hover {
   left: -90% !important;
   --bs-dropdown-min-width: 89px; }
 
-@media (max-width: 990px) {
-  .navbar-nav {
-    width: 120px;
-    position: absolute;
-    right: 1%;
-    top: 1%;
-    z-index: 1; }
-  .tituloHeader {
-    width: 0;
-    height: 0;
-    font-size: 0;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 0px;
-    border-width: 0; } }
-
-@media (max-width: 950px) {
-  .navbar-nav {
-    width: 90px; } }
-
 footer {
   display: flex;
   justify-content: space-between;
@@ -421,11 +402,13 @@ footer {
   .tituloAlq .pAlq {
     text-align: center;
     font-family: Textos;
-    margin-top: 10px;
+    margin: 10px 60px;
     padding-top: 20px;
+    padding-bottom: 10px;
     min-height: 13vh;
     background-color: #1f34435e;
-    font-size: larger; }
+    font-size: larger;
+    border-radius: 15px; }
 
 .grillaAlq {
   display: grid;
@@ -436,7 +419,8 @@ footer {
   align-items: center; }
   .grillaAlq img {
     height: 350px;
-    max-width: 350px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 25px;
     border-style: solid;
     border-width: 2px;
@@ -475,6 +459,8 @@ footer {
     padding: 25px;
     border-radius: 45px;
     height: 469px;
+    width: 400px;
+    overflow: hidden;
     box-shadow: 0px 5px 5px; }
   .grillaAlq p {
     font-family: Textos;
@@ -588,29 +574,24 @@ footer {
     max-width: 170px;
     margin: 10px; }
 
-@media (max-width: 1160px) {
-  .alertaContacto {
-    height: 390px;
-    width: 130px;
-    top: 67%; } }
+@media (max-width: 990px) {
+  .navbar-nav {
+    width: 120px;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    z-index: 1; }
+  .tituloHeader {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    border-width: 0; } }
 
-@media (max-width: 900px) {
-  .mapaIframe {
-    max-width: 400px; } }
-
-@media (max-width: 700px) {
-  .mapaIframe {
-    max-height: 300px;
-    max-width: 300px; }
-  .alertaContacto {
-    height: 260px;
-    font-size: small; } }
-
-@media (max-width: 600px) {
-  .alertaContacto {
-    display: none; }
-  .contacto P {
-    font-size: 13px; } }
+@media (max-width: 950px) {
+  .navbar-nav {
+    width: 90px; } }
 
 @media (max-width: 990px) {
   .sectionIndex .container {
@@ -642,9 +623,6 @@ footer {
     justify-content: center; } }
 
 @media (max-width: 440px) {
-  .grillaAlq img {
-    width: 250px;
-    height: 300px; }
   .imgsAlq {
     height: 400px;
     margin: 20px 1px; } }
@@ -660,6 +638,39 @@ footer {
 @media (max-width: 450px) {
   .grillaVentas .imgVentas .textoVentas {
     font-size: 10px; } }
+
+@media (max-width: 1160px) {
+  .alertaContacto {
+    height: 390px;
+    width: 130px;
+    top: 67%; } }
+
+@media (max-width: 900px) {
+  .mapaIframe {
+    max-width: 400px; } }
+
+@media (max-width: 700px) {
+  .mapaIframe {
+    max-height: 300px;
+    max-width: 300px; }
+  .alertaContacto {
+    height: 260px;
+    font-size: small; } }
+
+@media (max-width: 600px) {
+  .alertaContacto {
+    display: none; }
+  .contacto P {
+    font-size: 13px; } }
+
+@media (max-width: 1400px) {
+  .grillaGal .row {
+    flex-direction: column; } }
+
+@media (max-width: 500px) {
+  .grillaGal img {
+    width: 300px;
+    height: 330px; } }
 
 .pGaleria {
   display: flex;
@@ -710,12 +721,3 @@ footer {
     background-position: 100% 0%; }
   100% {
     background-position: 0% 50%; } }
-
-@media (max-width: 1400px) {
-  .grillaGal .row {
-    flex-direction: column; } }
-
-@media (max-width: 500px) {
-  .grillaGal img {
-    width: 300px;
-    height: 330px; } }
