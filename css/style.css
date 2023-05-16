@@ -625,7 +625,9 @@ footer {
 @media (max-width: 440px) {
   .imgsAlq {
     height: 400px;
-    margin: 20px 1px; } }
+    margin: 20px 1px; }
+  .pAlq {
+    font-size: medium !important; } }
 
 @media (max-width: 1020px) {
   .grillaVentas .imgVentas .textoVentas {
