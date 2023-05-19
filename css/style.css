@@ -30,9 +30,12 @@
     .mainIndex .busquedaIndex .d-flex {
       border-radius: 22px;
       background-color: #1f3443;
-      padding: 8px; }
+      padding: 8px;
+      transition: .3s; }
     .mainIndex .busquedaIndex .d-flex:hover {
-      transform: scale(1.01); }
+      transform: scale(1.01);
+      filter: drop-shadow(2px 4px 6px black);
+      transition: .3s; }
     .mainIndex .busquedaIndex .form-control {
       width: 550px;
       padding: 8px 8px 8px 8px;
@@ -87,7 +90,8 @@
       font-size: x-large;
       color: #efeded;
       font-style: oblique;
-      text-decoration: dotted; }
+      text-decoration: dotted;
+      transition: .2s; }
     .mainIndex .textoConFondo p:hover {
       color: #D9D9D9;
       transform: scale(1.1);
@@ -275,6 +279,8 @@
   border-radius: 20px;
   padding-right: 25px;
   padding-left: 25px;
+  transition: .2s;
+  filter: drop-shadow(2px 4px 6px black);
   transition: .2s; }
 
 .tituloHeader:hover {
@@ -304,7 +310,9 @@ header img:hover {
 .navbar-nav {
   background-color: #7e7e8a;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px; }
+  box-shadow: 5px 5px 5px;
+  border-style: solid;
+  border-color: #1f3443; }
 
 .navbar-nav:hover {
   box-shadow: 5px 5px 5px; }
@@ -351,6 +359,8 @@ footer {
     width: 25px;
     height: 25px;
     margin: 2px; }
+  footer .redesFooter a img:hover {
+    transform: scale(1.1); }
   footer .realStateFooter {
     position: absolute;
     left: 47%;
@@ -488,6 +498,7 @@ footer {
     .grillaVentas .imgVentas img {
       max-width: 250px;
       height: 250px;
+      object-fit: cover;
       border-radius: 25px;
       border-style: solid;
       border-width: 4px;
@@ -706,6 +717,7 @@ footer {
   .grillaGal img {
     width: 450px;
     height: 400px;
+    object-fit: cover;
     margin: 15px;
     border-style: solid;
     border-width: 20px;

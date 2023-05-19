@@ -25,10 +25,13 @@
             border-radius: 22px;
             background-color: #1f3443;
             padding: 8px;
+            transition:.3s ;
         }
 
         .d-flex:hover {
             transform: scale(1.01);
+            filter:drop-shadow(2px 4px 6px black);
+            transition: .3s;
         }
 
         .form-control {
@@ -98,6 +101,7 @@
             color: #efeded;
             font-style: oblique;
             text-decoration: dotted;
+            transition: .2s;
         }
 
         p:hover {
